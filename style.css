@@ -53,3 +53,7 @@ body {
     border: none;
     color: #bbb;
 }
+
+.seat-booked {
+    color: rgb(29, 195, 241);
+}
