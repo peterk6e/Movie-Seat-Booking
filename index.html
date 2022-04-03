@@ -13,7 +13,7 @@
     <div class="container">
       <div class="selector-container">
         <span>Select a movie</span>
-        <select class="movie-dropdown">
+        <select onChange = "adjustPrice()" id="movies" class="movie-dropdown">
           <option value="8">movie 1</option>
           <option value="10">movie 2</option>
           <option value="12">movie 3</option>
@@ -23,13 +23,17 @@
         </select>
       </div>
       <div class="movie-info">
+        <span>Seats booked: </span><span id="seats-booked">0</span>
       </div>
 
       <div id="seat-container" class="seat-container">
 
       </div>
       <div class="screen"></div>
-      <div class="footer"></div>
+      <div class="footer">
+        </br>
+        <span>Total price: </span><span id="total-price">0</span>$
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
