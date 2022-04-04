@@ -20,40 +20,69 @@ body {
   background: rgb(39, 39, 39);
   margin: 50px auto 0 auto;
   padding: 50px 70px;
-  box-shadow: 0 2px 10px #ffffff;
+  box-shadow: 0 2px 15px #d1d1d1;
   width: 600px;
   border-radius: 6px;
 }
 
-.movie-info {
-    padding: 10px;
+.seat-info {
+  text-align: center;
+  font-size: 15px;
+  color: rgb(170, 169, 169);
+  background: rgb(70, 69, 69);
+  padding: 4px 8px;
+  margin: 5px 25px;
+}
+
+.selection-info {
+  text-align: center;
+  padding: 20px 10px;
 }
 
 .seat-container {
-    text-align:center;
+  text-align: center;
+  margin-top: 50px;
 }
 
 .movie-dropdown {
   font-size: 22px;
   color: rgb(255, 255, 255);
-  background: rgb(54, 54, 54);
-  padding: 8px 25px;
+  background: rgb(24, 24, 24);
+  padding: 8px 2px;
   border: none;
 }
 
-.screen{
-    border: 4px solid white;
-    width: 300px;
-    margin: auto;
-    margin-top: 45px;
+.screen {
+  margin: auto;
+  margin-top: 55px;
+  border-bottom: 10px solid white;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  height: 0;
+  width: 300px;
 }
 
 .seat {
-    background: none;
-    border: none;
-    color: #bbb;
+  background: none;
+  border: none;
+  color: #bbb;
 }
 
 .seat-booked {
-    color: rgb(29, 195, 241);
+  color: rgb(29, 195, 241);
+}
+.md-16 {
+  font-size: 16px !important;
+}
+.accent {
+  color: rgb(29, 195, 241);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.footer {
+  margin-top: 45px;
+  background: black;
+  text-align: center;
+  padding: 8px 0px;
 }
