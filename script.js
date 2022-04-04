@@ -31,16 +31,7 @@ function init() {
     }
     seatContainer.innerHTML += "</br>";
   }
-
-  //eventListener not added if done in above loop. DOM might not be ready;
-  for (let i = 0; i < seatsArray.length; i++) {
-    for (let j = 0; j < seatRowArray.length; j++) {
-      if (j != 2 && j != 7) {
-        let seat = document.getElementById(i + "-" + j);
-        seat.addEventListener("click", toggleSeat);
-      }
-    }
-  }
+  addListeners();
 }
 
 function toggleSeat() {
@@ -63,4 +54,17 @@ function getTotalPrice() {
 function adjustPrice() {
   totalPrice.innerHTML = getTotalPrice();
   seatsBooked.innerHTML = seatsBookedCount;
+}
+
+function addListeners() {
+  //eventListener not added if done in init function. DOM might not be ready;
+  for (let i = 0; i < seatsArray.length; i++) {
+    for (let j = 0; j < seatRowArray.length; j++) {
+      if (j != 2 && j != 7) {
+        document
+          .getElementById(i + "-" + j)
+          .addEventListener("click", toggleSeat);
+      }
+    }
+  }
 }
